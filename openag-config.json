@@ -6,7 +6,7 @@
   "stop_recipe_url": "{{api_url}}/service/environments/{{environment}}/stop_recipe",
 
   "demo": {
-    "image_url": "{{root_url}}/img.jpg?timestamp={{timestamp}}"
+    "image_url": "{{root_url}}/img.jpg"
   },
 
   "environmental_data_point": {
