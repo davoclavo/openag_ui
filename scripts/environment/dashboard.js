@@ -2,10 +2,7 @@
 The dashboard displays the latest camera information from the Food Computer.
 */
 import {html, forward, Effects, thunk} from 'reflex';
-import {
-  environmental_data_point as ENVIRONMENTAL_DATA_POINT,
-  demo as DEMO
-} from '../../openag-config';
+import {environmental_data_point as ENVIRONMENTAL_DATA_POINT} from '../../openag-config';
 import {compose} from '../lang/functional';
 import {render as renderTemplate} from '../common/stache';
 import {update as updateUnknown} from '../common/unknown';
@@ -294,8 +291,9 @@ const viewEmpty = (model, address) =>
 
 // Utils
 const templateImgUrl = model =>
-  renderTemplate(DEMO.image_url, {
-    root_url: model.root
+  renderTemplate(ENVIRONMENTAL_DATA_POINT.image, {
+    origin_url: model.origin,
+    id: model.imageID
   });
 
 const templateVideoUrl = model =>

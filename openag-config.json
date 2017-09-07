@@ -5,10 +5,6 @@
   "start_recipe_url": "{{api_url}}/service/environments/{{environment}}/start_recipe",
   "stop_recipe_url": "{{api_url}}/service/environments/{{environment}}/stop_recipe",
 
-  "demo": {
-    "image_url": "{{root_url}}/img.jpg"
-  },
-
   "environmental_data_point": {
     "local": "environmental_data_point",
     "origin": "{{origin_url}}/environmental_data_point",
@@ -39,7 +35,7 @@
   "app": {
     "local": "openag",
     "state_id": "state",
-    "default_state": "dashboard",
+    "default_state": "chart",
     "show_nav": true,
     "show_dashboard": true,
     "show_chart": true,
