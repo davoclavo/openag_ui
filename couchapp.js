@@ -5,9 +5,10 @@ var ddoc = {_id:'_design/app'}
 
 ddoc.rewrites = [
   {from:"/", to:'index.html'},
-  {from:"/api", to:'../../'},
-  {from:"/api/*", to:'../../*'},
-  {from:"/*", to:'*'}
+  {from:"/vendor/*", to:'vendor/*'},
+  {from:"/assets/*", to:'assets/*'},
+  {from:"/scripts/*", to:'scripts/*'},
+  {from:"/*", to:'../../../*'}
 ];
 
 ddoc.views = {};
