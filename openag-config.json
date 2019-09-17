@@ -1,6 +1,7 @@
 {
-  "__root_url": "https://41c2135857cfbbeb4f5c0fb6696dfde1.resindevice.io",
-  "root_url": null,
+  "__root_url": null,
+  "root_url": "https://your-balena-device-id.balena-devices.com",
+  "__origin_url": "{{root_url}}:5984",
   "origin_url": "{{root_url}}",
   "api_url": "{{origin_url}}/_openag/api/0.0.1",
   "start_recipe_url": "{{api_url}}/service/environments/{{environment}}/start_recipe",
